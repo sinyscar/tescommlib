@@ -15,6 +15,15 @@ import com.bumptech.glide.Glide;
 import com.tescomm.customview.photohelper.Constants;
 import com.tescomm.customview.photohelper.TakePhotoHelper;
 
+/**
+ * Copyright  2017 北京泰合佳通信息技术有限公司. All rights reserved.
+ * <p>
+ * 选择照片demo
+ *
+ * @author [闫季群]
+ * @date [创建日期，2018/10/12]
+ * @Version version: 1.0
+ */
 public class PhoteHelperActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TakePhotoHelper helper;

@@ -17,11 +17,15 @@ import com.tescomm.customview.entities.CityBean;
 
 import java.util.ArrayList;
 import java.util.List;
-
 /**
+ * Copyright  2017 北京泰合佳通信息技术有限公司. All rights reserved.
+ * <p>
  * 城市选择demo
+ *
+ * @author [闫季群]
+ * @date [创建日期，2018/10/12]
+ * @Version version: 1.0
  */
-
 public class CityPickerActivity  extends AppCompatActivity implements View.OnClickListener {
     View pop_top;
     TextView tvMyIntentAddress;
@@ -96,6 +100,7 @@ public class CityPickerActivity  extends AppCompatActivity implements View.OnCli
             @Override
             public void onOneClick() {
 //                maddressPrsent.getAddressResult("", 1);
+                getAddressResultSuccess(null,1);
             }
             /**
              * 获取第二级列表的数据
@@ -142,6 +147,7 @@ public class CityPickerActivity  extends AppCompatActivity implements View.OnCli
 //                item.setN(bean.getName());
 //                beans.add(item);
 //            }
+            //演示数据
             if(listHttpResponse==null){
                 CityBean.AddressItemBean item = new CityBean.AddressItemBean();
                 item.setI("1");
@@ -160,6 +166,7 @@ public class CityPickerActivity  extends AppCompatActivity implements View.OnCli
 //                item.setN(bean.getName());
 //                beans.add(item);
 //            }
+            //演示数据
             if(listHttpResponse==null){
                 CityBean.AddressItemBean item = new CityBean.AddressItemBean();
                 item.setI("1");
@@ -178,6 +185,7 @@ public class CityPickerActivity  extends AppCompatActivity implements View.OnCli
 //                item.setN(bean.getName());
 //                beans.add(item);
 //            }
+            //演示数据
             if(listHttpResponse==null){
                 CityBean.AddressItemBean item = new CityBean.AddressItemBean();
                 item.setI("1");

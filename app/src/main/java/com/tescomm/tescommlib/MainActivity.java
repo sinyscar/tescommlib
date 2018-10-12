@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.tescomm.customview.addresspicker.CityPickerView;
+import com.tescomm.tescommlib.screen.ScreenActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,5 +22,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void addresspickerClick(View view){
         startActivity(new Intent(getApplicationContext(),CityPickerActivity.class));
+    }
+
+    public void screenAdaptClick(View view) {
+        startActivity(new Intent(getApplicationContext(), ScreenActivity.class));
     }
 }
